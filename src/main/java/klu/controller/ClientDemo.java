@@ -37,7 +37,7 @@ public class ClientDemo
 
         String result =  CM.insertdep(D); 
         if ("redirectLogin".equals(result)) {
-            response.sendRedirect("insert");  //here instead of this keep another file and then in that login link
+            response.sendRedirect("insert"); 
             return null; 
         }
         else {
@@ -58,7 +58,7 @@ public class ClientDemo
 
         String result =  CM.deletedep(depid); 
         if ("redirectdelete".equals(result)) {
-            response.sendRedirect("delete");  //here instead of this keep another file and then in that login link
+            response.sendRedirect("delete");  
             return null; 
         }
         else {
