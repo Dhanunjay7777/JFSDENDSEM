@@ -11,13 +11,27 @@ import org.springframework.web.servlet.ModelAndView;
 public class ViewController 
 {
 	@GetMapping("/")
-	public ModelAndView login()
+	public ModelAndView register()
 	{
 		ModelAndView MV = new ModelAndView();
 		MV.setViewName("insert");
 		return MV;
 	}
-	
+
+	@GetMapping("/success")
+	public ModelAndView success()
+	{
+		ModelAndView MV = new ModelAndView();
+		MV.setViewName("success");
+		return MV;
+	}
+	@GetMapping("/failed")
+	public ModelAndView failed()
+	{
+		ModelAndView MV = new ModelAndView();
+		MV.setViewName("failed");
+		return MV;
+	}
 	
 	
 
